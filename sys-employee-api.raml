@@ -6,7 +6,7 @@ baseUri: http://localhost:8081/emp
 description: this is a system api which does a crud operation on mysql datadase
 
 /employee:
-    post:
+  post:
       body:
         application/json:
           type: object
@@ -138,7 +138,6 @@ description: this is a system api which does a crud operation on mysql datadase
 # 		              "status": 500,
 #                   "message": “Internal Server Error”
 # 		          }
-/update-emp:
   put:
     body:
       application/xml:
@@ -200,6 +199,69 @@ description: this is a system api which does a crud operation on mysql datadase
                 <status>500</status>
                 <message>Internal Server Error</message>
               </response>
+  get: 
+# /update-emp:
+#   put:
+#     body:
+#       application/xml:
+#         type: object
+#         xml:
+#           name: employee
+#         properties:
+#           employeeID:
+#             required: true
+#             type: integer
+#             example: 100
+#           employeeStatus:
+#             required: true
+#             type: string
+#             example: "A"
+#         example:
+#           <?xml version="1.0" encoding="UTF-8"?>
+#           <employee>
+#             <employeeID>333</employeeID>
+#             <employeeStatus>A</employeeStatus>
+#           </employee>
+#     responses:
+#       200:
+#         body:
+#           application/json:
+#             type: object
+#             properties:
+#               status:
+#                 type: integer
+#                 required: true
+#                 example: 200
+#               message:
+#                 type: string
+#                 required: true
+#                 example: "Updated"
+#             example:
+#               {
+# 		              "status": 200,
+#                   "message": “Success”
+# 		          }            
+#       500:
+#         body:
+#           application/xml:
+#             type: object
+#             xml:
+#               name: response
+#             properties:
+#               status:
+#                 type: integer
+#                 required: true
+#                 example: 500
+#               message:
+#                 type: string
+#                 required: true
+#                 example: "Internal Server Error"
+#             example:
+#               <?xml version="1.0" encoding="UTF-8"?>
+#               <response>
+#                 <status>500</status>
+#                 <message>Internal Server Error</message>
+#               </response>
 
 /get-emp:
   get:
