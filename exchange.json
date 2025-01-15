@@ -3,7 +3,7 @@
   "name": "sys-employee-api",
   "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
   "assetId": "sys-employee-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "classifier": "raml",
   "tags": [],
   "descriptorVersion": "1.0.0",
