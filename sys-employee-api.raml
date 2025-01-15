@@ -5,72 +5,139 @@ baseUri: http://localhost:8081/emp
 
 description: this is a system api which does a crud operation on mysql datadase
 
-/create-emp:
-  post:
-    body:
-      application/json:
-        type: object
-        properties:
-          employeeID:
-            required: true
-            type: integer
-            example: 35355
-          employeeName:
-            required: true
-            type: string
-            example: "regerg"
-          employeeStatus:
-            required: true
-            type: string
-            example: "A"
-          empLocation:
-            required: true
-            type: string
-            example: "delhi"
-        example:
-              {
-                "employeeID": 100,
-                "employeeName": "ABC",
-                "employeeStatus": "A",
-                "empLocation": "Mumbai"
-              }    
-    responses:
-      201:
-        body:
-          application/json:
-            type: object
-            properties:
-              status:
-                type: integer
-                required: true
-                example: 201
-              message:
-                required: true
-                type: string
-                example: "created"
-            example:
-              {
-		              "status": 201,
-                  "message": “Success”
-		          }
-      500:
-        body:
-          application/xml:
-            type: object
-            properties:
-              status:
-                type: integer
-                required: true
-                example: 500
-              message:
-                type: string
-                required: true
-                example: "Internal Server Error"
-            example:
-               {
-		              "status": 500,
-                  "message": “Internal Server Error”
-		          }
+/employee:
+    post:
+      body:
+        application/json:
+          type: object
+          properties:
+            employeeID:
+              required: true
+              type: integer
+              example: 35355
+            employeeName:
+              required: true
+              type: string
+              example: "regerg"
+            employeeStatus:
+              required: true
+              type: string
+              example: "A"
+            empLocation:
+              required: true
+              type: string
+              example: "delhi"
+          example:
+                {
+                  "employeeID": 100,
+                  "employeeName": "ABC",
+                  "employeeStatus": "A",
+                  "empLocation": "Mumbai"
+                }    
+      responses:
+        201:
+          body:
+            application/json:
+              type: object
+              properties:
+                status:
+                  type: integer
+                  required: true
+                  example: 201
+                message:
+                  required: true
+                  type: string
+                  example: "created"
+              example:
+                {
+                    "status": 201,
+                    "message": “Success”
+                }
+        500:
+          body:
+            application/xml:
+              type: object
+              properties:
+                status:
+                  type: integer
+                  required: true
+                  example: 500
+                message:
+                  type: string
+                  required: true
+                  example: "Internal Server Error"
+              example:
+                {
+                    "status": 500,
+                    "message": “Internal Server Error”
+                }
+
+# /create-emp:
+#   post:
+#     body:
+#       application/json:
+#         type: object
+#         properties:
+#           employeeID:
+#             required: true
+#             type: integer
+#             example: 35355
+#           employeeName:
+#             required: true
+#             type: string
+#             example: "regerg"
+#           employeeStatus:
+#             required: true
+#             type: string
+#             example: "A"
+#           empLocation:
+#             required: true
+#             type: string
+#             example: "delhi"
+#         example:
+#               {
+#                 "employeeID": 100,
+#                 "employeeName": "ABC",
+#                 "employeeStatus": "A",
+#                 "empLocation": "Mumbai"
+#               }    
+#     responses:
+#       201:
+#         body:
+#           application/json:
+#             type: object
+#             properties:
+#               status:
+#                 type: integer
+#                 required: true
+#                 example: 201
+#               message:
+#                 required: true
+#                 type: string
+#                 example: "created"
+#             example:
+#               {
+# 		              "status": 201,
+#                   "message": “Success”
+# 		          }
+#       500:
+#         body:
+#           application/xml:
+#             type: object
+#             properties:
+#               status:
+#                 type: integer
+#                 required: true
+#                 example: 500
+#               message:
+#                 type: string
+#                 required: true
+#                 example: "Internal Server Error"
+#             example:
+#                {
+# 		              "status": 500,
+#                   "message": “Internal Server Error”
+# 		          }
 /update-emp:
   put:
     body:
