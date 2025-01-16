@@ -14,21 +14,7 @@ description: this is a system api which does a crud operation on mysql datadase
       201:
         body:
           application/json:
-            type: object
-            properties:
-              status:
-                type: integer
-                required: true
-                example: 201
-              message:
-                required: true
-                type: string
-                example: "created"
-            example:
-              {
-                  "status": 201,
-                  "message": “Success”
-              }
+            type: !include /employee-response-dataType.raml
       500:
         body:
           application/xml:
