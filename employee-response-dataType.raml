@@ -2,4 +2,39 @@
 
 type: object
 properties:
-  
+  201:
+    body:
+      application/json:
+        type: object
+        properties:
+          status:
+            type: integer
+            required: true
+            example: 201
+          message:
+            required: true
+            type: string
+            example: "created"
+        example:
+          {
+              "status": 201,
+              "message": “Success”
+          }
+  500:
+        body:
+          application/xml:
+            type: object
+            properties:
+              status:
+                type: integer
+                required: true
+                example: 500
+              message:
+                type: string
+                required: true
+                example: "Internal Server Error"
+            example:
+              {
+                  "status": 500,
+                  "message": “Internal Server Error”
+              }
