@@ -8,32 +8,7 @@ description: this is a system api which does a crud operation on mysql datadase
 /employees:
   post:
     body:
-      application/json:
-        type: object
-        properties:
-          employeeID:
-            required: true
-            type: integer
-            example: 35355
-          employeeName:
-            required: true
-            type: string
-            example: "regerg"
-          employeeStatus:
-            required: true
-            type: string
-            example: "A"
-          empLocation:
-            required: true
-            type: string
-            example: "delhi"
-        example:
-              {
-                "employeeID": 100,
-                "employeeName": "ABC",
-                "employeeStatus": "A",
-                "empLocation": "Mumbai"
-              }    
+         
     responses:
       201:
         body:
