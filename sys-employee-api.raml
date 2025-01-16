@@ -8,8 +8,8 @@ description: this is a system api which does a crud operation on mysql datadase
 # uses:
 
 types:
-  EmployeeResponse: !include /dataTypes/responses/create-employee-response.raml
-
+  CreateEmployeeResponse: !include /dataTypes/responses/create-employee-response.raml
+  GetEmployeeResponse: !include /dataTypes/responses/get-employees-response.raml
 /employees:
   post:
     body:
