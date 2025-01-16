@@ -1,6 +1,8 @@
-#%RAML 1.0 DataType
+#%RAML 1.0 Library
 
-type: object
-properties:
-  employeeID: string
-  dob: date
+types:
+  Employee:
+    type: object
+    properties:
+      ID: string
+      dob: date-only
