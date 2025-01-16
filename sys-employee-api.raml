@@ -10,6 +10,7 @@ description: this is a system api which does a crud operation on mysql datadase
 types:
   CreateEmployeeResponse: !include /dataTypes/responses/create-employee-response.raml
   GetEmployeeResponse: !include /dataTypes/responses/get-employees-response.raml
+
 /employees:
   post:
     body:
@@ -109,21 +110,21 @@ types:
       200:
         body:
           application/json:
-            type: EmployeeResponse
-            properties:
-              status:
-                type: integer
-                required: true
-                example: 201
-              message:
-                required: true
-                type: string
-                example: "created"
-            example:
-              {
-		              "status": 200,
-                  "message": “Success”
-		          }
+            type: GetEmployeeResponse
+            # properties:
+            #   status:
+            #     type: integer
+            #     required: true
+            #     example: 201
+            #   message:
+            #     required: true
+            #     type: string
+            #     example: "created"
+            # example:
+            #   {
+		        #       "status": 200,
+            #       "message": “Success”
+		        #   }
       500:
         body:
           application/xml:
