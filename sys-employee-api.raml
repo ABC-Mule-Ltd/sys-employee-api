@@ -6,8 +6,8 @@ baseUri: http://localhost:8081/api
 description: this is a system api which does a crud operation on mysql datadase
 
 uses:
-types:
-  EmployeeResponse: !include /dataTypes/responses/create-employee-response.raml
+  types:
+    EmployeeResponse: !include /dataTypes/responses/create-employee-response.raml
 
 /employees:
   post:
@@ -18,7 +18,7 @@ types:
       201:
         body:
           application/json:
-            type: !include /employee-response-dataType.raml
+            type: EmployeeResponse
       500:
         body:
           application/xml:
