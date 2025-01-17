@@ -9,13 +9,14 @@
     "zipCode": "",
     "state": "",
     "country": "",
-    "isPermanenent": false
+    "isPermanent": false
   },
   "permanentAddress": {
     "addressLine1": "",
     "addressLine2": "",
     "zipCode": "",
     "state": "",
-    "country": "",
-  }
+    "country": ""
+  },
+  "depart"
 }
