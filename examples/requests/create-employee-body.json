@@ -3,6 +3,12 @@
   "lastName": "",
   "middleName": "",
   "gender": "",
+  "deptCode": "",
+  "contact": "",
+  "email": "",
+  "branchCode" : "",
+  "DOB": "",
+  "DOJ": "",
   "presentAddress": {
     "addressLine1": "",
     "addressLine2": "",
@@ -17,10 +23,5 @@
     "zipCode": "",
     "state": "",
     "country": ""
-  },
-  "deptCode": "",
-  "contact": "",
-  "email": "",
-  "branchCode" : "",
-  
+  }
 }
