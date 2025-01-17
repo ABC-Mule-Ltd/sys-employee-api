@@ -1,5 +1,14 @@
 {
   "firstName": "",
   "lastName": "",
-  ""
+  "middleName": "",
+  "gender": "",
+  "presentAddress": {
+    "addressLine1": "",
+    "addressLine2": "",
+    "zipCode": "",
+    "state": "",
+    "country": ""
+  },
+  "isPermnanent"
 }
