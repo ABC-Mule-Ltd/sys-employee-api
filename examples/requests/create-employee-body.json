@@ -8,7 +8,14 @@
     "addressLine2": "",
     "zipCode": "",
     "state": "",
-    "country": ""
+    "country": "",
+    "isPermanenent": false
   },
-  "isPermnanent"
+  "permanentAddress": {
+    "addressLine1": "",
+    "addressLine2": "",
+    "zipCode": "",
+    "state": "",
+    "country": "",
+  }
 }
