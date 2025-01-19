@@ -63,7 +63,30 @@ description: this is a system api which does a crud operation on snowflake datab
                 required: true
                 type: string
                 example: "India"
-          
+          presentAddress:
+            required: true
+            type: object
+            properties:
+              addressLine1:
+                required: true
+                type: string
+                example: "123, MG Road"
+              addressLine2:
+                required: false
+                type: string
+                example: "Flat 502, Blue Residency"
+              zipCode:
+                required: true
+                type: string
+                example: "411001"
+              State:
+                required: true
+                type: string
+                example: "Maharashtra"
+              country:
+                required: true
+                type: string
+                example: "India"
                   
                   
               
