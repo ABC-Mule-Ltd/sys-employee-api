@@ -103,10 +103,10 @@ description: this is a system api which does a crud operation on snowflake datab
             required: true
             type: string
             example: "C1Y"
-          activeFlag:
+          activeStatus:
             required: true
             type: string
-            example: "A"
+            enum: [A,I]
         example:
             {
               "ID": "JS-23-01",
@@ -133,7 +133,8 @@ description: this is a system api which does a crud operation on snowflake datab
               },
               "department": "HR",
               "branchLocation": "Pune",
-              "grade": "A"
+              "grade": "C1Y",
+              "activeStatus": "A"
             }
     responses:
       201:
@@ -215,11 +216,7 @@ description: this is a system api which does a crud operation on snowflake datab
                 "description":"The server encountered an unexpected condition which prevented it from fulfilling the request”
                 "transactionId":"48n32920-69ne-47b4-907d-fa15869f3c4d"
               }              
-              
-                  
-              
-                  
-                  
+
    
                       
                            
