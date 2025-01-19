@@ -169,11 +169,20 @@ description: this is a system api which does a crud operation on snowflake datab
                 type: string
                 example: "Service unavailable"
               description:
-                
+                type: string
+                required: true
+                example: "The (upstream) service is temporarily not available"  
               transactionId:
                 required: true
                 type: string
                 example: "48n32920-69ne-47b4-907d-fa15869f3c4d"
+            example:
+              {
+                "code":503,
+                "message":"Service unavailable",
+                "description":"The (upstream) service is temporarily   not available",
+                "transactionId":"48n32920-69ne-47b4-907d-fa15869f3c4d"
+              }
                   
               
                   
