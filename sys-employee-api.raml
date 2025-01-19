@@ -498,15 +498,15 @@ description: this is a system api which does a crud operation on snowflake datab
               message:
                 required: true
                 type: string
-                example: "employee details"
+                example: "employee details updated"
               transactionId:
                 required: true
                 type: string
                 example: "48n32920-69ne-47b4-907d-fa15869f3c4d"
             example:
               {
-                "statusCode": 201,
-                "message":"Employee details created",
+                "statusCode": 200,
+                "message":"Employee details updated",
                 "transactionId":"48n32920-69ne-47b4-907d-fa15869f3c4d"
               }
       503:
@@ -566,7 +566,7 @@ description: this is a system api which does a crud operation on snowflake datab
                 "transactionId":"48n32920-69ne-47b4-907d-fa15869f3c4d"
               }
 
-                      
+                   
                            
                   
               
