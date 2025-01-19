@@ -178,11 +178,15 @@ description: this is a system api which does a crud operation on snowflake datab
                 example: "48n32920-69ne-47b4-907d-fa15869f3c4d"
             example:
               {
-                "code":503,
+                "statusCode": 503,
                 "message":"Service unavailable",
                 "description":"The (upstream) service is temporarily   not available",
                 "transactionId":"48n32920-69ne-47b4-907d-fa15869f3c4d"
               }
+      500:
+        body:
+          application/json:
+            
                   
               
                   
