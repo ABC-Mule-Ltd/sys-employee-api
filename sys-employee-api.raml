@@ -454,30 +454,6 @@ description: this is a system api which does a crud operation on snowflake datab
                 required: true
                 type: string
                 example: "India"
-          permanentAddress:
-            required: true
-            type: object
-            properties:
-              addressLine1:
-                required: true
-                type: string
-                example: "123, MG Road"
-              addressLine2:
-                required: false
-                type: string
-                example: "Flat 502, Blue Residency"
-              zipCode:
-                required: true
-                type: string
-                example: "411001"
-              State:
-                required: true
-                type: string
-                example: "Maharashtra"
-              country:
-                required: true
-                type: string
-                example: "India"
           department:
             required: true
             type: string
@@ -496,14 +472,7 @@ description: this is a system api which does a crud operation on snowflake datab
             enum: [A,I]
         example:
             {
-              "ID": "JS-23-01",
-              "firstName": "John",
-              "lastName": "Smith",
-              "middleName": "Alexander",
-              "DOB": "1995-06-12",
-              "email": "john.smith@abc.com",
               "contactNumber": "+91-9876543210",
-              "DOJ": "2023-01-15",
               "presentAddress": {
                 "addressLine1": "123, MG Road",
                 "addressLine2": "Flat 502, Blue Residency",
