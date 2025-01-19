@@ -226,10 +226,14 @@ description: this is a system api which does a crud operation on snowflake datab
         type: string
         required: true
         example: "John"
-                email:
-            required: true
-            type: string
-            example: "john.smith@abc.com"
+      email:
+        required: true
+        type: string
+        example: "john.smith@abc.com"
+      department:
+        required: true
+        type: string
+        enum: [TR,MR,HR,SR,AR,IR,PR]
 
 
    
