@@ -160,7 +160,18 @@ description: this is a system api which does a crud operation on snowflake datab
           application/json:
             type: object
             properties:
-              
+              statusCode:
+                required: true
+                type: number
+                example: 503
+              message:
+                required: true
+                type: string
+                example: "employee datails created"
+              transactionId:
+                required: true
+                type: string
+                example: "48n32920-69ne-47b4-907d-fa15869f3c4d"
                   
               
                   
