@@ -240,131 +240,131 @@ description: this is a system api which does a crud operation on snowflake datab
           application/json:
             type: object
             properties:
-            ID:
-              required: true
-              type: string
-              example: "JS-23-01"
-            firstName:
-              type: string
-              required: true
-              example: "John"
-            middleName:
-              type: string
-              required: false
-              example: "Alexander"              
-            lastName:
-              required: true
-              type: string
-              example: "Smith"
-            DOB:
-              type: date-only
-              required: true
-              example: 1995-06-12
-            email:
-              required: true
-              type: string
-              example: "john.smith@abc.com"
-            contactNumber:
-              required: false
-              type: string
-              example: "+91-9876543210"
-            DOJ:
-              type: date-only
-              required: true
-              example: 2023-01-15          
-            presentAddress:
-              required: true
-              type: object
-              properties:
-                addressLine1:
-                  required: true
-                  type: string
-                  example: "123, MG Road"
-                addressLine2:
-                  required: false
-                  type: string
-                  example: "Flat 502, Blue Residency"
-                zipCode:
-                  required: true
-                  type: string
-                  example: "411001"
-                State:
-                  required: true
-                  type: string
-                  example: "Maharashtra"
-                country:
-                  required: true
-                  type: string
-                  example: "India"
-            permanentAddress:
-              required: true
-              type: object
-              properties:
-                addressLine1:
-                  required: true
-                  type: string
-                  example: "123, MG Road"
-                addressLine2:
-                  required: false
-                  type: string
-                  example: "Flat 502, Blue Residency"
-                zipCode:
-                  required: true
-                  type: string
-                  example: "411001"
-                State:
-                  required: true
-                  type: string
-                  example: "Maharashtra"
-                country:
-                  required: true
-                  type: string
-                  example: "India"
-            department:
-              required: true
-              type: string
-              enum: [TR,MR,HR,SR,AR,IR,PR]
-            branchLocation:
-              required: false
-              type: string
-              enum: [Pune, mumbai, kolkatta,delhi, banglore]
-            grade:
-              required: true
-              type: string
-              example: "C1Y"
-            activeStatus:
-              required: true
-              type: string
-              enum: [A,I]
-          example:
-              {
-                "ID": "JS-23-01",
-                "firstName": "John",
-                "lastName": "Smith",
-                "middleName": "Alexander",
-                "DOB": "1995-06-12",
-                "email": "john.smith@abc.com",
-                "contactNumber": "+91-9876543210",
-                "DOJ": "2023-01-15",
-                "presentAddress": {
-                  "addressLine1": "123, MG Road",
-                  "addressLine2": "Flat 502, Blue Residency",
-                  "zipCode": "411001",
-                  "State": "Maharashtra",
-                  "country": "India"
-                },
-                "permanentAddress": {
-                  "addressLine1": "456, Hill View Road",
-                  "addressLine2": "Greenwood Villa",
-                  "zipCode": "411007",
-                  "State": "Maharashtra",
-                  "country": "India"
-                },
-                "department": "HR",
-                "branchLocation": "Pune",
-                "grade": "C1Y",
-                "activeStatus": "A"
-              }
+              ID:
+                required: true
+                type: string
+                example: "JS-23-01"
+              firstName:
+                type: string
+                required: true
+                example: "John"
+              middleName:
+                type: string
+                required: false
+                example: "Alexander"              
+              lastName:
+                required: true
+                type: string
+                example: "Smith"
+              DOB:
+                type: date-only
+                required: true
+                example: 1995-06-12
+              email:
+                required: true
+                type: string
+                example: "john.smith@abc.com"
+              contactNumber:
+                required: false
+                type: string
+                example: "+91-9876543210"
+              DOJ:
+                type: date-only
+                required: true
+                example: 2023-01-15          
+              presentAddress:
+                required: true
+                type: object
+                properties:
+                  addressLine1:
+                    required: true
+                    type: string
+                    example: "123, MG Road"
+                  addressLine2:
+                    required: false
+                    type: string
+                    example: "Flat 502, Blue Residency"
+                  zipCode:
+                    required: true
+                    type: string
+                    example: "411001"
+                  State:
+                    required: true
+                    type: string
+                    example: "Maharashtra"
+                  country:
+                    required: true
+                    type: string
+                    example: "India"
+              permanentAddress:
+                required: true
+                type: object
+                properties:
+                  addressLine1:
+                    required: true
+                    type: string
+                    example: "123, MG Road"
+                  addressLine2:
+                    required: false
+                    type: string
+                    example: "Flat 502, Blue Residency"
+                  zipCode:
+                    required: true
+                    type: string
+                    example: "411001"
+                  State:
+                    required: true
+                    type: string
+                    example: "Maharashtra"
+                  country:
+                    required: true
+                    type: string
+                    example: "India"
+              department:
+                required: true
+                type: string
+                enum: [TR,MR,HR,SR,AR,IR,PR]
+              branchLocation:
+                required: false
+                type: string
+                enum: [Pune, mumbai, kolkatta,delhi, banglore]
+              grade:
+                required: true
+                type: string
+                example: "C1Y"
+              activeStatus:
+                required: true
+                type: string
+                enum: [A,I]
+            example:
+                {
+                  "ID": "JS-23-01",
+                  "firstName": "John",
+                  "lastName": "Smith",
+                  "middleName": "Alexander",
+                  "DOB": "1995-06-12",
+                  "email": "john.smith@abc.com",
+                  "contactNumber": "+91-9876543210",
+                  "DOJ": "2023-01-15",
+                  "presentAddress": {
+                    "addressLine1": "123, MG Road",
+                    "addressLine2": "Flat 502, Blue Residency",
+                    "zipCode": "411001",
+                    "State": "Maharashtra",
+                    "country": "India"
+                  },
+                  "permanentAddress": {
+                    "addressLine1": "456, Hill View Road",
+                    "addressLine2": "Greenwood Villa",
+                    "zipCode": "411007",
+                    "State": "Maharashtra",
+                    "country": "India"
+                  },
+                  "department": "HR",
+                  "branchLocation": "Pune",
+                  "grade": "C1Y",
+                  "activeStatus": "A"
+                }
 
 
    
