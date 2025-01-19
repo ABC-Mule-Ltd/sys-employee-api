@@ -199,16 +199,16 @@ description: this is a system api which does a crud operation on snowflake datab
               description:
                 type: string
                 required: true
-                example: "The (upstream) service is temporarily not available"  
+                example: "The server encountered an unexpected condition which prevented it from fulfilling the request"  
               transactionId:
                 required: true
                 type: string
                 example: "48n32920-69ne-47b4-907d-fa15869f3c4d"
             example:
               {
-                "statusCode": 503,
-                "message":"Service unavailable",
-                "description":"The (upstream) service is temporarily   not available",
+                "statusCode":500,
+                "message":"Internal server error",
+                "description":"The server encountered an unexpected condition which prevented it from fulfilling the request”
                 "transactionId":"48n32920-69ne-47b4-907d-fa15869f3c4d"
               }              
               
