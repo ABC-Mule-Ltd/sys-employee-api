@@ -5,7 +5,7 @@ baseUri: http://localhost:8081/api
 
 description: this is a system api which does a crud operation on snowflake database
 
-/employee:
+/employees:
   post:
     body:
       application/json:
@@ -162,62 +162,62 @@ description: this is a system api which does a crud operation on snowflake datab
                 "message":"Employee details created",
                 "transactionId":"48n32920-69ne-47b4-907d-fa15869f3c4d"
               }
-      503:
-        body:
-          application/json:
-            type: object
-            properties:
-              statusCode:
-                required: true
-                type: number
-                example: 503
-              message:
-                required: true
-                type: string
-                example: "Service unavailable"
-              description:
-                type: string
-                required: true
-                example: "The (upstream) service is temporarily not available"  
-              transactionId:
-                required: true
-                type: string
-                example: "48n32920-69ne-47b4-907d-fa15869f3c4d"
-            example:
-              {
-                "statusCode": 503,
-                "message":"Service unavailable",
-                "description":"The (upstream) service is temporarily not available",
-                "transactionId":"48n32920-69ne-47b4-907d-fa15869f3c4d"
-              }
-      500:
-        body:
-          application/json:
-            type: object
-            properties:
-              statusCode:
-                required: true
-                type: number
-                example: 500
-              message:
-                required: true
-                type: string
-                example: "Internal server error"
-              description:
-                type: string
-                required: true
-                example: "The server encountered an unexpected condition"  
-              transactionId:
-                required: true
-                type: string
-                example: "48n32920-69ne-47b4-907d-fa15869f3c4d"
-            example:
-              {
-                "statusCode": 500,
-                "message":"Internal server error",
-                "description":"The server encountered an unexpected condition",
-                "transactionId":"48n32920-69ne-47b4-907d-fa15869f3c4d"
-              }
+      # 503:
+      #   body:
+      #     application/json:
+      #       type: object
+      #       properties:
+      #         statusCode:
+      #           required: true
+      #           type: number
+      #           example: 503
+      #         message:
+      #           required: true
+      #           type: string
+      #           example: "Service unavailable"
+      #         description:
+      #           type: string
+      #           required: true
+      #           example: "The (upstream) service is temporarily not available"  
+      #         transactionId:
+      #           required: true
+      #           type: string
+      #           example: "48n32920-69ne-47b4-907d-fa15869f3c4d"
+      #       example:
+      #         {
+      #           "statusCode": 503,
+      #           "message":"Service unavailable",
+      #           "description":"The (upstream) service is temporarily not available",
+      #           "transactionId":"48n32920-69ne-47b4-907d-fa15869f3c4d"
+      #         }
+      # 500:
+      #   body:
+      #     application/json:
+      #       type: object
+      #       properties:
+      #         statusCode:
+      #           required: true
+      #           type: number
+      #           example: 500
+      #         message:
+      #           required: true
+      #           type: string
+      #           example: "Internal server error"
+      #         description:
+      #           type: string
+      #           required: true
+      #           example: "The server encountered an unexpected condition"  
+      #         transactionId:
+      #           required: true
+      #           type: string
+      #           example: "48n32920-69ne-47b4-907d-fa15869f3c4d"
+      #       example:
+      #         {
+      #           "statusCode": 500,
+      #           "message":"Internal server error",
+      #           "description":"The server encountered an unexpected condition",
+      #           "transactionId":"48n32920-69ne-47b4-907d-fa15869f3c4d"
+      #         }
   get:
     queryParameters:
       ID:
