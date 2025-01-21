@@ -7,14 +7,15 @@ description: this is a system api which does a crud operation on snowflake datab
 
 
 types:
-  Employee: !include dataTypes/requests/createEmployeeRequest.raml
+  CreateEmployeeRequest : !include dataTypes/requests/createEmployeeRequest.raml
+  GetEmployeeResponse: !include dataTypes/responses/get
 
 /employees:
   post:
     body:
       application/json:
         type: array
-        items: Employee
+        items: CreateEmployeeRequest
         minItems: 1
         maxItems: 10
 
@@ -42,7 +43,7 @@ types:
                 "message":"Employee details created",
                 "transactionId":"48n32920-69ne-47b4-907d-fa15869f3c4d"
               }
-              
+
   get:
     queryParameters:
       ID:
