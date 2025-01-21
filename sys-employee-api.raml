@@ -11,10 +11,10 @@ description: this is a system api which does a crud operation on snowflake datab
       application/json:
         type: object
         properties:
-          ID:
-            required: true
-            type: string
-            example: "JS-23-01"
+          # ID:
+          #   required: true
+          #   type: string
+          #   example: "JS-23-01"
           firstName:
             type: string
             required: true
@@ -34,10 +34,12 @@ description: this is a system api which does a crud operation on snowflake datab
           email:
             required: true
             type: string
+            # pattern: ??
             example: "john.smith@abc.com"
           contactNumber:
             required: false
             type: string
+            # pattern: ??
             example: "+91-9876543210"
           DOJ:
             type: date-only
