@@ -5,6 +5,10 @@ baseUri: http://localhost:8081/api
 
 description: this is a system api which does a crud operation on snowflake database
 
+
+uses:
+  Employee: !include 
+
 /employees:
   post:
     body:
