@@ -120,7 +120,11 @@ types:
       200:
         body:
           application/json:
-            type: object
+            type: array
+            items: 
+              type: Employee
+              properties:
+                ID: string
             properties:
               ID:
                 required: true
