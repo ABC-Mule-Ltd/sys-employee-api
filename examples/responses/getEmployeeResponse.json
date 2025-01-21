@@ -1,5 +1,6 @@
 [
   {
+    "ID": "TR-00125",
     "DOJ": "2020-02-24",
     "middleName": "Jr.",
     "contact": "+91-6296288390",
@@ -31,7 +32,6 @@
       "employeeCount": 1509,
       "operatingSince": "1999-01-01"
     },
-    "ID": "TR-00125",
     "permanentAddress": {
       "addressLine1": "3TB, Jackson Heights, 22nd Downing street",
       "addressLine2": "Opposite the CC2 mall",
