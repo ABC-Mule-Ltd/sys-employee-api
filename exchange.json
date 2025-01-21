@@ -1,13 +1,20 @@
 {
-  "main": "sys-employee-api.raml",
-  "name": "sys-employee-api",
-  "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
-  "assetId": "sys-employee-api",
+  "dependencies": [
+    {
+      "version": "1.0.0",
+      "assetId": "abc-employee",
+      "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
+      "provided": false
+    }
+  ],
   "version": "1.0.2",
-  "classifier": "raml",
-  "tags": [],
-  "descriptorVersion": "1.0.0",
-  "organizationId": "9b8efe00-883f-40ec-913d-12759bd40702",
+  "originalFormatVersion": "1.0",
   "apiVersion": "v1",
-  "originalFormatVersion": "1.0"
+  "descriptorVersion": "1.0.0",
+  "classifier": "raml",
+  "main": "sys-employee-api.raml",
+  "assetId": "sys-employee-api",
+  "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
+  "organizationId": "9b8efe00-883f-40ec-913d-12759bd40702",
+  "name": "sys-employee-api"
 }
