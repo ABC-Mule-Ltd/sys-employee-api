@@ -1,6 +1,10 @@
 #%RAML 1.0 DataType
 
 uses:
-  Library: 
+  Library: ../../library.raml
 
-type: 
+type: Library.Employee
+properties:
+  ID: 
+    type: string
+    pattern: ^\w{}
