@@ -35,23 +35,6 @@ types:
       - Library.clientSecurity
 
     is: [Library.ErrorResponse]
-    queryParameters:
-      ID:
-        required: false
-        type: string
-        example: "JS-23-01"
-      firstName:
-        type: string
-        required: false
-        example: "John"
-      email:
-        required: false
-        type: string
-        example: "john.smith@abc.com"
-      department:
-        required: false
-        type: string
-        enum: [TR,MR,HR,SR,AR,IR,PR]
 
     responses:
       200:
@@ -78,7 +61,7 @@ types:
     delete:
       securedBy:
         - Library.clientSecurity
-        
+
       is: [Library.ErrorResponse]
       responses:
         200:
