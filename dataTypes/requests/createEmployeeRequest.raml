@@ -3,11 +3,7 @@
 uses:
   Library: ../../library.raml
 
-type: array
-items: 
-  type: Library.Employee
-minItems: 1
-maxItems: 10
+type: Library.Employee | Library.Employee[]
 examples:
   singleEmployeeRequest: !include ../../examples/requests/createEmployeeRequest.json
   # bulkEmployeeCreateRequest: !include 
