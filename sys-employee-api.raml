@@ -20,6 +20,7 @@ types:
 
 /employees:
   post:
+    is: [ErrorResponse]
     body:
       application/json: CreateEmployeeRequest
 
