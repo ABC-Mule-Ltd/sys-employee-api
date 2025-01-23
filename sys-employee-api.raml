@@ -33,7 +33,7 @@ types:
   get:
     securedBy:
       - Library.clientSecurity
-      
+
     is: [Library.ErrorResponse]
     queryParameters:
       ID:
@@ -64,6 +64,9 @@ types:
       ID: Library.ID
 
     put:
+      securedBy:
+        - Library.clientSecurity
+
       is: [Library.ErrorResponse]
       body:
         application/json: UpdateEmployeeRequest
@@ -73,6 +76,9 @@ types:
             application/json: Library.Response
 
     delete:
+      securedBy:
+        - Library.clientSecurity
+        
       is: [Library.ErrorResponse]
       responses:
         200:
