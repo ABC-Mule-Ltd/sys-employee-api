@@ -7,6 +7,8 @@ description: this is a system api which does a crud operation on snowflake datab
 
 types:
   CreateEmployeeRequest : !include dataTypes/requests/createEmployeeRequest.raml
+
+  CreateEmployeeResponse: !include dataTypes/responses/createEmployeeResponse.raml
   GetEmployeeResponse: !include dataTypes/responses/getEmployeeResponse.raml
 
 /employees:
@@ -17,27 +19,7 @@ types:
     responses:
       201:
         body:
-          application/json:
-            type: object
-            properties:
-              statusCode:
-                required: true
-                type: number
-                example: 201
-              message:
-                required: true
-                type: string
-                example: "employee datails created"
-              transactionId:
-                required: true
-                type: string
-                example: "48n32920-69ne-47b4-907d-fa15869f3c4d"
-            example:
-              {
-                "statusCode": 201,
-                "message":"Employee details created",
-                "transactionId":"48n32920-69ne-47b4-907d-fa15869f3c4d"
-              }
+          application/json: 
 
   get:
     queryParameters:
