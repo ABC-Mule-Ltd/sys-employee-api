@@ -1,3 +1,5 @@
 {
-  
+  "status": "success",
+  "message": "Employee created successfully",
+  "data": ["I-293823"]
 }
