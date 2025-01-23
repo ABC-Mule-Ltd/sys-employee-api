@@ -8,8 +8,6 @@ description: this is a system api which does a crud operation on snowflake datab
 uses:
   Library: library.raml
 
-traits: 
-  ErrorResponse: Library.ErrorResponse
 
 types:
   CreateEmployeeRequest : !include dataTypes/requests/createEmployeeRequest.raml
@@ -20,7 +18,7 @@ types:
 
 /employees:
   post:
-    is: [ErrorResponse]
+    is: [Library.ErrorResponse]
     body:
       application/json: CreateEmployeeRequest
 
@@ -30,7 +28,7 @@ types:
           application/json: CreateEmployeeResponse
 
   get:
-    is: [ErrorResponse]
+    is: [Library.ErrorResponse]
     queryParameters:
       ID:
         required: false
@@ -60,7 +58,7 @@ types:
       ID: Library.ID
 
     put:
-      is: [ErrorResponse]
+      is: [Library.ErrorResponse]
       body:
         application/json: UpdateEmployeeRequest
       responses:
@@ -69,7 +67,7 @@ types:
             application/json: Library.Response
 
     delete:
-      is: [ErrorResponse]
+      is: [Library.ErrorResponse]
       responses:
         200:
           body:
