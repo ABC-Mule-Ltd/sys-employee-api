@@ -19,7 +19,7 @@ types:
     responses:
       201:
         body:
-          application/json: 
+          application/json: CreateEmployeeResponse
 
   get:
     queryParameters:
@@ -39,11 +39,11 @@ types:
         required: false
         type: string
         enum: [TR,MR,HR,SR,AR,IR,PR]
+
     responses:
       200:
         body:
-          application/json:
-            type: GetEmployeeResponse
+          application/json: GetEmployeeResponse
 
   put:
     body:
