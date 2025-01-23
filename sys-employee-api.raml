@@ -8,9 +8,6 @@ description: this is a system api which does a crud operation on snowflake datab
 uses:
   Library: library.raml
 
-examples:
-  UpdateEmployeeResponse: !include examples/responses/updateEmployeeResponse.raml
-
 types:
   CreateEmployeeRequest : !include dataTypes/requests/createEmployeeRequest.raml
   UpdateEmployeeRequest:  !include dataTypes/requests/updateEmployeeRequest.raml
@@ -73,4 +70,4 @@ types:
           body:
             application/json: 
               type: Library.Response
-              example: 
+              example: !include examples/responses/updateEmployeeResponse.raml
