@@ -3,7 +3,10 @@
 uses:
   Library: ../../library.raml
 
-type: Library.Employee
+type: array
+items: 
+  type: Library.Employee
+  minItems: 1
 examples:
   singleEmployeeRequest: !include ../../examples/requests/createEmployeeRequest.json
   # bulkEmployeeCreateRequest: !include 
