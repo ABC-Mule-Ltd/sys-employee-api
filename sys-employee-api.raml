@@ -21,8 +21,10 @@ types:
     securedBy:
       - Library.clientSecurity
     is: [Library.ErrorResponse]
-    body:
-      application/json: PingResponse
+    responses:
+      200:
+        body:
+          application/json: PingResponse
 
 /employees:
   post:
