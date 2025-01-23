@@ -9,8 +9,8 @@ uses:
   Library: library.raml
 
 traits:
-  ErrorResponse: library.raml
-  
+  ErrorResponse: ./library.raml#traits
+
 types:
   CreateEmployeeRequest : !include dataTypes/requests/createEmployeeRequest.raml
   UpdateEmployeeRequest:  !include dataTypes/requests/updateEmployeeRequest.raml
