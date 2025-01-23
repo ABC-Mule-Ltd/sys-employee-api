@@ -6,7 +6,8 @@ uses:
 type: array
 items: 
   type: Library.Employee
-  minItems: 1
+minItems: 1
+maxItems: 10
 examples:
   singleEmployeeRequest: !include ../../examples/requests/createEmployeeRequest.json
   # bulkEmployeeCreateRequest: !include 
