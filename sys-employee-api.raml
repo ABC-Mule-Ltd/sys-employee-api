@@ -10,7 +10,7 @@ uses:
 
 types:
   CreateEmployeeRequest : !include dataTypes/requests/createEmployeeRequest.raml
-  UpdateEmployeeRequest: 
+  UpdateEmployeeRequest:  !include dataTypes/requests/updateEmployeeRequest.raml
 
   CreateEmployeeResponse: !include dataTypes/responses/createEmployeeResponse.raml
   GetEmployeeResponse: !include dataTypes/responses/getEmployeeResponse.raml
@@ -54,7 +54,8 @@ types:
     uriParameters:
       ID: Library.ID
     put:
-      
+      body:
+        application/json: UpdateEmployeeRequest
     delete:
       responses:
         200:
