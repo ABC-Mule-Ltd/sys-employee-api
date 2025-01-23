@@ -7,10 +7,11 @@ traits:
 
   Queryable:
     queryParameters:
-      ID: ID
-      firstName:
+      
+      ID?: ID
+      firstName?:
         type: string
-        required: false
+        pattern: ^\w{3,}
         example: "John"
       email:
         required: false
