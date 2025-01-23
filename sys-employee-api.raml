@@ -58,7 +58,9 @@ types:
       responses:
         200:
           body:
-            application/json: Library.Response
+            application/json: 
+              type: Library.Response
+              example: !include examples/responses/updateEmployeeResponse.json
 
     delete:
       securedBy:
