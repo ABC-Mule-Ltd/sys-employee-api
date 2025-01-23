@@ -20,7 +20,7 @@ types:
   post:
     securedBy: 
       - Library.clientSecurity
-      
+
     is: [Library.ErrorResponse]
     body:
       application/json: CreateEmployeeRequest
@@ -31,6 +31,9 @@ types:
           application/json: CreateEmployeeResponse
 
   get:
+    securedBy:
+      - Library.clientSecurity
+      
     is: [Library.ErrorResponse]
     queryParameters:
       ID:
