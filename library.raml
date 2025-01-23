@@ -7,7 +7,19 @@ traits:
 
   Queryable:
     queryParameters:
-      
+      ID: ID
+      firstName:
+        type: string
+        required: false
+        example: "John"
+      email:
+        required: false
+        type: string
+        example: "john.smith@abc.com"
+      department:
+        required: false
+        type: string
+        enum: [TR,MR,HR,SR,AR,IR,PR]
 
 
 types:
