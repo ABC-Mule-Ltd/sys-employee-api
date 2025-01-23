@@ -7,9 +7,11 @@ traits:
 
   Pageable:
     queyrParameters:
-      page:
+      page?:
         type: number
-        
+        example: 10
+        displayName: Page Number
+        description:  The page 
   Queryable:
     queryParameters:
       ID?: ID
