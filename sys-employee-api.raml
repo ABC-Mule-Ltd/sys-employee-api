@@ -9,7 +9,7 @@ uses:
   Library: library.raml
 
 traits: 
-  ErrorResponse: !include traits.raml
+  ErrorResponse: Library
 
 types:
   CreateEmployeeRequest : !include dataTypes/requests/createEmployeeRequest.raml
@@ -58,7 +58,7 @@ types:
   /{ID}:
     uriParameters:
       ID: Library.ID
-      
+
     put:
       is: [ErrorResponse]
       body:
