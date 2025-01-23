@@ -15,12 +15,15 @@ types:
   CreateEmployeeResponse: !include dataTypes/responses/createEmployeeResponse.raml
   GetEmployeeResponse: !include dataTypes/responses/getEmployeeResponse.raml
 
+/ping:
+  get:
 /employees:
   post:
     securedBy: 
       - Library.clientSecurity
 
     is: [Library.ErrorResponse]
+
     body:
       application/json: CreateEmployeeRequest
 
