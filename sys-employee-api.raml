@@ -14,7 +14,7 @@ types:
 
   CreateEmployeeResponse: !include dataTypes/responses/createEmployeeResponse.raml
   GetEmployeeResponse: !include dataTypes/responses/getEmployeeResponse.raml
-  PingResponse: Library.PingR
+  PingResponse: Library.PingResponse
 
 /ping:
   get:
@@ -22,7 +22,7 @@ types:
       - Library.clientSecurity
     is: [Library.ErrorResponse]
     body:
-      application/json:
+      application/json: PingResponse
 
 /employees:
   post:
