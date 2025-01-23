@@ -17,6 +17,12 @@ types:
 
 /ping:
   get:
+    securedBy:
+      - Library.clientSecurity
+    is: [Library.ErrorResponse]
+    body:
+      application/json:
+
 /employees:
   post:
     securedBy: 
