@@ -68,67 +68,7 @@ types:
   put:
     body:
       application/json:
-        type: object
-        properties:
-          contactNumber:
-            required: false
-            type: string
-            example: "+91-9876543210"          
-          presentAddress:
-            required: true
-            type: object
-            properties:
-              addressLine1:
-                required: true
-                type: string
-                example: "123, MG Road"
-              addressLine2:
-                required: false
-                type: string
-                example: "Flat 502, Blue Residency"
-              zipCode:
-                required: true
-                type: string
-                example: "411001"
-              State:
-                required: true
-                type: string
-                example: "Maharashtra"
-              country:
-                required: true
-                type: string
-                example: "India"
-          department:
-            required: true
-            type: string
-            enum: [TR,MR,HR,SR,AR,IR,PR]
-          branchLocation:
-            required: false
-            type: string
-            enum: [Pune, mumbai, kolkatta,delhi, banglore]
-          grade:
-            required: true
-            type: string
-            example: "C1Y"
-          activeStatus:
-            required: true
-            type: string
-            enum: [A,I]
-        example:
-            {
-              "contactNumber": "+91-9876543210",
-              "presentAddress": {
-                "addressLine1": "123, MG Road",
-                "addressLine2": "Flat 502, Blue Residency",
-                "zipCode": "411001",
-                "State": "Maharashtra",
-                "country": "India"
-              },
-              "department": "HR",
-              "branchLocation": "Pune",
-              "grade": "C1Y",
-              "activeStatus": "A"
-            }
+        type: 
     responses:
       200:
         body:
