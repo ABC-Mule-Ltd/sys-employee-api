@@ -2,7 +2,7 @@
   "dependencies": [
     {
       "version": "1.0.0",
-      "assetId": "abc-employee",
+      "assetId": "abc-error-responses",
       "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
       "provided": false
     },
@@ -14,13 +14,19 @@
     },
     {
       "version": "1.0.0",
-      "assetId": "abc-error-responses",
+      "assetId": "abc-ping-response",
       "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
       "provided": false
     },
     {
       "version": "1.0.1",
       "assetId": "abc-auth-security",
+      "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
+      "provided": false
+    },
+    {
+      "version": "1.0.0",
+      "assetId": "abc-employee",
       "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
       "provided": false
     }
