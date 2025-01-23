@@ -3,10 +3,9 @@
 uses:
   Library: ../../library.raml
 
-types:
-  Response: Library.Response
-
-type: array
+type: Library.Response
+properties:
+  data:
 items: 
   type: Library.Employee
   properties:
