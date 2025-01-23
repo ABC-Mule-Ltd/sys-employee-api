@@ -30,6 +30,7 @@ types:
           application/json: CreateEmployeeResponse
 
   get:
+    is: [ErrorResponse]
     queryParameters:
       ID:
         required: false
@@ -58,6 +59,7 @@ types:
     uriParameters:
       ID: Library.ID
     put:
+      is: [ErrorResponse]
       body:
         application/json: UpdateEmployeeRequest
       responses:
@@ -66,6 +68,7 @@ types:
             application/json: Library.Response
 
     delete:
+      is: [ErrorResponse]
       responses:
         200:
           body:
