@@ -8,6 +8,9 @@ description: this is a system api which does a crud operation on snowflake datab
 uses:
   Library: library.raml
 
+traits:
+  ErrorResponse: library.raml
+  
 types:
   CreateEmployeeRequest : !include dataTypes/requests/createEmployeeRequest.raml
   UpdateEmployeeRequest:  !include dataTypes/requests/updateEmployeeRequest.raml
