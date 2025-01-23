@@ -19,7 +19,8 @@ types:
 /employees:
   post:
     securedBy: 
-      - Library.
+      - Library.clientSecurity
+      
     is: [Library.ErrorResponse]
     body:
       application/json: CreateEmployeeRequest
