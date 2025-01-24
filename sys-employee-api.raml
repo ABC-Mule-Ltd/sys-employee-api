@@ -33,6 +33,7 @@ types:
     is: 
       - Library.ErrorResponse
       - Library.Pageable
+
     body:
       application/json: CreateDepartmentRequest
     responses:
@@ -41,6 +42,7 @@ types:
           application/json: 
             type: Library.Response
             example: !include examples/responses/createDepartmentResponse.json
+            
   /{ID}:
     uriParameters:  
       ID: Library.DepartmentId
