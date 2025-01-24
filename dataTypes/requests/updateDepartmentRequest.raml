@@ -5,7 +5,9 @@ uses:
 
 type: Library.Department
 properties:
-  deptCode?: string
+  deptCode:
+    required: false !imp
+
   deptName?:  string
 
 example: !include ../../examples/requests/updateDepartmentRequest.json
