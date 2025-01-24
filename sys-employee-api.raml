@@ -53,7 +53,13 @@ types:
       is: 
         - Library.ErrorResponse
       body:
-        application/json: 
+        application/json: UpdateDepartmentRequest
+
+      responses:
+        200:
+          body:
+            application/json: 
+              type: Library.R
 
     delete:
       is: 
