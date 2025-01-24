@@ -47,7 +47,6 @@ traits:
 types:
   ########################## EXTERNAL DATA TYPES ##########################
   Employee: !include exchange_modules/9b8efe00-883f-40ec-913d-12759bd40702/abc-employee/1.0.0/abc-employee.raml
-  Department: !include exchange_modules/9b8efe00-883f-40ec-913d-12759bd40702/abc-department/1.0.1/abc-department.raml
   Response: !include exchange_modules/9b8efe00-883f-40ec-913d-12759bd40702/abc-api-response/1.0.1/abc-api-response.raml
   PingResponse: !include exchange_modules/9b8efe00-883f-40ec-913d-12759bd40702/abc-ping-response/1.0.1/abc-ping-response.raml
 
@@ -57,10 +56,3 @@ types:
     description: Unique identifier of employee.
     pattern: ^\w{2,3}\-\d{5,10}$
     example: TR-29838
-
-  DepartmentId: 
-    type: string
-    displayName: Department ID
-    description: Unique department ID, every employee belongs to at least one department.
-    pattern: ^\w{2,3}$
-    example: ITR
