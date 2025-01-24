@@ -3,6 +3,8 @@
 uses:
   Library: ../../library.raml
 
-type: Library.Department
+type: object
+properties:
+  deptHead: 
 
 example: !include ../../examples/requests/updateDepartmentRequest.json
