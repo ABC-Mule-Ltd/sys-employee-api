@@ -56,7 +56,9 @@ types:
         - Library.ErrorResponse
       responses:
         body:
-          
+          application/json:
+            type: Library.Response
+            example: examples/responses/deleteDepartmentResponse.json
 
 /employees:
   post:
