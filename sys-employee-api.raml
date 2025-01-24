@@ -19,6 +19,7 @@ types:
   GetEmployeeResponse: !include dataTypes/responses/getEmployeeResponse.raml
   PingResponse: Library.PingResponse
 
+
 /ping:
   get:
     is: [Library.ErrorResponse]
@@ -42,7 +43,7 @@ types:
           application/json: 
             type: Library.Response
             example: !include examples/responses/createDepartmentResponse.json
-            
+
   /{ID}:
     uriParameters:  
       ID: Library.DepartmentId
