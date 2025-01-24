@@ -14,12 +14,6 @@
     },
     {
       "version": "1.0.1",
-      "assetId": "abc-api-response",
-      "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
-      "provided": false
-    },
-    {
-      "version": "1.0.1",
       "assetId": "abc-department",
       "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
       "provided": false
@@ -35,6 +29,18 @@
       "assetId": "abc-auth-security",
       "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
       "provided": false
+    },
+    {
+      "version": "1.0.1",
+      "assetId": "abc-api-response",
+      "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
+      "provided": false
+    },
+    {
+      "version": "1.0.0",
+      "assetId": "abc-pagination-trait",
+      "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
+      "provided": false
     }
   ],
   "version": "1.0.5",
@@ -46,6 +52,5 @@
   "assetId": "sys-employee-api",
   "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
   "organizationId": "9b8efe00-883f-40ec-913d-12759bd40702",
-  "name": "sys-employee-api",
-  "tags": []
+  "name": "sys-employee-api"
 }
