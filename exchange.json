@@ -37,7 +37,7 @@
       "provided": false
     }
   ],
-  "version": "1.0.3",
+  "version": "1.0.4",
   "originalFormatVersion": "1.0",
   "apiVersion": "v1",
   "descriptorVersion": "1.0.0",
@@ -46,5 +46,6 @@
   "assetId": "sys-employee-api",
   "groupId": "9b8efe00-883f-40ec-913d-12759bd40702",
   "organizationId": "9b8efe00-883f-40ec-913d-12759bd40702",
-  "name": "sys-employee-api"
+  "name": "sys-employee-api",
+  "tags": []
 }
