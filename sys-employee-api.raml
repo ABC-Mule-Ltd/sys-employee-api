@@ -13,12 +13,9 @@ uses:
 types:
   CreateEmployeeRequest : !include dataTypes/requests/createEmployeeRequest.raml
   UpdateEmployeeRequest:  !include dataTypes/requests/updateEmployeeRequest.raml
-  CreateDepartmentRequest: !include dataTypes/requests/createDepartmentRequest.raml
-  UpdateDepartmentRequest: !include dataTypes/requests/updateDepartmentRequest.raml
-
+  
   CreateEmployeeResponse: !include dataTypes/responses/createEmployeeResponse.raml
   GetEmployeeResponse: !include dataTypes/responses/getEmployeeResponse.raml
-  GetDepartmentResponse: !include dataTypes/responses/getDepartmentResponse.raml
   PingResponse: Library.PingResponse
 
 
@@ -29,57 +26,6 @@ types:
       200:
         body:
           application/json: PingResponse
-
-/departments:
-  get:
-    is: 
-      - Library.ErrorResponse
-      - Library.Pageable
-
-    responses:
-      200:
-        body:
-          application/json: GetDepartmentResponse
-          
-  post:
-    is: 
-      - Library.ErrorResponse
-
-    body:
-      application/json: CreateDepartmentRequest
-    responses:
-      201:
-        body:
-          application/json: 
-            type: Library.Response
-            example: !include examples/responses/createDepartmentResponse.json
-
-  /{ID}:
-    uriParameters:  
-      ID: Library.DepartmentId
-
-    put:
-      is: 
-        - Library.ErrorResponse
-      body:
-        application/json: UpdateDepartmentRequest
-
-      responses:
-        200:
-          body:
-            application/json: 
-              type: Library.Response
-              example: !include examples/responses/updateDepartmentResponse.json
-
-    delete:
-      is: 
-        - Library.ErrorResponse
-      responses:
-        200:
-          body:
-            application/json:
-              type: Library.Response
-              example: !include examples/responses/deleteDeparmentResponse.json
 
 /employees:
   post:
