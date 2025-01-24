@@ -21,8 +21,6 @@ types:
 
 /ping:
   get:
-    securedBy:
-      - Library.clientSecurity
     is: [Library.ErrorResponse]
     responses:
       200:
@@ -55,9 +53,6 @@ types:
 
 /employees:
   post:
-    securedBy: 
-      - Library.clientSecurity
-
     is: [Library.ErrorResponse]
 
     body:
@@ -69,9 +64,6 @@ types:
           application/json: CreateEmployeeResponse
 
   get:
-    securedBy:
-      - Library.clientSecurity
-
     is: 
       - Library.ErrorResponse
       - Library.Queryable
@@ -87,9 +79,6 @@ types:
       ID: Library.ID
 
     put:
-      securedBy:
-        - Library.clientSecurity
-
       is: [Library.ErrorResponse]
       body:
         application/json: UpdateEmployeeRequest
@@ -101,9 +90,6 @@ types:
               example: !include examples/responses/updateEmployeeResponse.json
 
     delete:
-      securedBy:
-        - Library.clientSecurity
-
       is: [Library.ErrorResponse]
       responses:
         200:
