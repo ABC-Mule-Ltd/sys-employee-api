@@ -29,9 +29,11 @@ types:
 /departments:
   get:
   post:
-  /
-  put:
-  delete:
+  /{ID}:
+    uriParameters:  
+      ID: Library
+    put:
+    delete:
 
 /employees:
   post:
