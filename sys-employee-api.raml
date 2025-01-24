@@ -31,11 +31,18 @@ types:
 
 /departments:
   get:
-    
-  post:
     is: 
       - Library.ErrorResponse
       - Library.Pageable
+
+    responses:
+      200:
+        body:
+          application/json: 
+          
+  post:
+    is: 
+      - Library.ErrorResponse
 
     body:
       application/json: CreateDepartmentRequest
