@@ -1,5 +1,7 @@
 #%RAML 1.0
 title: sys-employee-api
+securedBy:
+  - Library.clientSecurity
 
 # baseUri: http://localhost:8081/api
 
@@ -30,8 +32,6 @@ types:
 /departments:
   get:
   post:
-    securedBy:
-      - Library.clientSecurity
     is: 
       - Library.ErrorResponse
       - Library.Pageable
