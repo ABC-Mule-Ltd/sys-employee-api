@@ -4,5 +4,8 @@ uses:
   Library: ../../library.raml
 
 type: Library.Department
+properties:
+  deptCode?: string
+  deptName?:  string
 
 example: !include ../../examples/requests/updateDepartmentRequest.json
