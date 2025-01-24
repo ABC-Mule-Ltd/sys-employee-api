@@ -46,10 +46,17 @@ types:
       ID: Library.DepartmentId
 
     put:
+      is: 
+        - Library.ErrorResponse
       body:
         application/json: 
 
     delete:
+      is: 
+        - Library.ErrorResponse
+      responses:
+        body:
+          
 
 /employees:
   post:
