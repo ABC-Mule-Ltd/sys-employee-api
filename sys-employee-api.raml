@@ -32,7 +32,15 @@ types:
   post:
     securedBy:
       - Library.clientSecurity
-    is: [Library.ErrorResponse]
+    is: 
+      - Library.ErrorResponse
+      - Library.Pageable
+    body:
+      application/json: CreateDepartmentRequest
+    responses:
+      201:
+        application/json: 
+
   /{ID}:
     uriParameters:  
       ID: Library.DepartmentId
