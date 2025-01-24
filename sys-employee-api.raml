@@ -9,7 +9,7 @@ uses:
   Library: library.raml
 
 securitySchemes:
-  C
+  xClientAuth: Library.clientSecurity
 
 types:
   CreateEmployeeRequest : !include dataTypes/requests/createEmployeeRequest.raml
