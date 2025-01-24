@@ -1,5 +1,7 @@
-{
-  "deptCode": "ITR",
-  "deptName": "Human Resource",
-  "deptHead": "TR-23988"
-}
+[
+  {
+    "deptCode": "ITR",
+    "deptName": "Human Resource",
+    "deptHead": "TR-23988"
+  }
+]
