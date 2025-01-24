@@ -8,9 +8,6 @@ description: this is a system api which does a crud operation on snowflake datab
 uses:
   Library: library.raml
 
-securitySchemes:
-  xClientAuth: Library.clientSecurity
-
 types:
   CreateEmployeeRequest : !include dataTypes/requests/createEmployeeRequest.raml
   UpdateEmployeeRequest:  !include dataTypes/requests/updateEmployeeRequest.raml
