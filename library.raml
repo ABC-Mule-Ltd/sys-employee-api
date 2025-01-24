@@ -1,13 +1,13 @@
 #%RAML 1.0 Library
 
 securitySchemes:
-  ########################## EXCHANGE MODULE IMPORTS ##########################
+  ########################## EXTERNAL SECURITY SCHEMAS ##########################
   clientSecurity: !include exchange_modules/9b8efe00-883f-40ec-913d-12759bd40702/abc-auth-security/1.0.1/abc-auth-security.raml
 traits:
-  ########################## EXCHANGE MODULE IMPORTS ##########################
+  ########################## EXTERNAL TRAITS ##########################
   ErrorResponse: !include exchange_modules/9b8efe00-883f-40ec-913d-12759bd40702/abc-error-responses/1.0.0/abc-error-responses.raml
 
-  ########################## EXCHANGE MODULE IMPORTS ##########################
+  ########################## INTERNAL TRAITS ##########################
   Pageable:
     queryParameters:
       page?:
