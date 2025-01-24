@@ -39,8 +39,10 @@ types:
       application/json: CreateDepartmentRequest
     responses:
       201:
-        application/json: 
-
+        body:
+          application/json: 
+            type: Library.Response
+            example: !include examples/responses/updateEmployeeResponse.json
   /{ID}:
     uriParameters:  
       ID: Library.DepartmentId
